@@ -13,6 +13,9 @@ public class FizzBuzz {
             result = "Fizz";
 
         }
+        if (i == 2) {
+            result = ""+2;
+        }
         return result;
     }
 }
