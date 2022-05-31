@@ -11,4 +11,10 @@ public class FizzBuzzShould {
         FizzBuzz fizzbuzz = new FizzBuzz();
         assertEquals("Fizz", fizzbuzz.getString(3));
     }
+
+    @Test
+    void return_buzz_if_number_is_five(){
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        assertEquals("Buzz", fizzbuzz.getString(5));
+    }
 }
