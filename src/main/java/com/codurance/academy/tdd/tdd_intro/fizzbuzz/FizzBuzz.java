@@ -8,6 +8,9 @@ public class FizzBuzz {
         if (i == 5){
             return "Buzz";
         }
-        return "Fizz";
+        if (i == 3){
+            return "Fizz";
+        }
+        return ""+1;
     }
 }
