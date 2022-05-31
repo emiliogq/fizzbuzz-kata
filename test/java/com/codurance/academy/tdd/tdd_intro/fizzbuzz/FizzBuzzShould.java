@@ -33,4 +33,10 @@ public class FizzBuzzShould {
     void return_number_if_number_is_1(){
         assertEquals("1", fizzbuzz.getString(1));
     }
+
+    @Test
+    void return_number_if_number_is_2(){
+        assertEquals("2", fizzbuzz.getString(2));
+    }
+
 }
