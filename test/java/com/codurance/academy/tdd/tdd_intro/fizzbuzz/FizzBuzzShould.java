@@ -24,4 +24,9 @@ public class FizzBuzzShould {
         assertEquals("FizzBuzz", fizzbuzz.getString(15));
     }
 
+    @Test
+    void return_number_if_number_is_1(){
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        assertEquals("1", fizzbuzz.getString(1));
+    }
 }
