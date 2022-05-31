@@ -2,15 +2,17 @@ package com.codurance.academy.tdd.tdd_intro.fizzbuzz;
 
 public class FizzBuzz {
     public String getString(int i) {
+        String result = ""+1;
         if (i == 15){
-            return "FizzBuzz";
+            result = "FizzBuzz";
         }
         if (i == 5){
-            return "Buzz";
+            result = "Buzz";
         }
         if (i == 3){
-            return "Fizz";
+            result = "Fizz";
+
         }
-        return ""+1;
+        return result;
     }
 }
