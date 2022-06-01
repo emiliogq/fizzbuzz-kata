@@ -29,10 +29,18 @@ public class FizzBuzzShould {
     void return_buzz_if_number_is_five(){
         assertEquals("Buzz", fizzbuzz.getString(5));
     }
+    @Test
+    void return_buzz_if_number_is_ten(){
+        assertEquals("Buzz", fizzbuzz.getString(10));
+    }
 
     @Test
     void return_fizzbuzz_if_number_is_fifteen(){
         assertEquals("FizzBuzz", fizzbuzz.getString(15));
+    }
+    @Test
+    void return_fizzbuzz_if_number_is_thirty(){
+        assertEquals("FizzBuzz", fizzbuzz.getString(30));
     }
 
     @Test
