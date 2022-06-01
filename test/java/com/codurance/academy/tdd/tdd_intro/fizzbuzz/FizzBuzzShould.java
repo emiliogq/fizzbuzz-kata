@@ -22,6 +22,10 @@ public class FizzBuzzShould {
     }
 
     @Test
+    void return_fizz_if_number_is_six(){
+        assertEquals("Fizz", fizzbuzz.getString(6));
+    }
+    @Test
     void return_buzz_if_number_is_five(){
         assertEquals("Buzz", fizzbuzz.getString(5));
     }
