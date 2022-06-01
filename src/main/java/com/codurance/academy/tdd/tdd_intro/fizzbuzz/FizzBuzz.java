@@ -3,19 +3,27 @@ package com.codurance.academy.tdd.tdd_intro.fizzbuzz;
 public class FizzBuzz {
     public String getString(int i) {
         String result = ""+i;
-        if (i % 3 == 0 && i % 5 == 0){
+        if (isDivisibleBy3(i) && isDivisibleBy5(i)){
             result = "FizzBuzz";
         }
         else {
-            if (i % 3 == 0){
+            if (isDivisibleBy3(i)){
                 result = "Fizz";
             }
-            if (i % 5 == 0){
+            if (isDivisibleBy5(i)){
                 result = "Buzz";
             }
 
         }
 
         return result;
+    }
+
+    private boolean isDivisibleBy5(int i) {
+        return i % 5 == 0;
+    }
+
+    private boolean isDivisibleBy3(int i) {
+        return i % 3 == 0;
     }
 }
