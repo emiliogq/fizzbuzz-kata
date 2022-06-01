@@ -2,7 +2,7 @@ package com.codurance.academy.tdd.tdd_intro.fizzbuzz;
 
 public class FizzBuzz {
     public String getString(int i) {
-        String result = ""+1;
+        String result = ""+i;
         if (i == 15){
             result = "FizzBuzz";
         }
@@ -13,9 +13,7 @@ public class FizzBuzz {
             result = "Fizz";
 
         }
-        if (i == 2) {
-            result = ""+2;
-        }
+
         return result;
     }
 }

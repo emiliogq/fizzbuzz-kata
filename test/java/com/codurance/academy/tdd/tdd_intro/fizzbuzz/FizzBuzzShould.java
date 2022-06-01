@@ -3,6 +3,8 @@ package com.codurance.academy.tdd.tdd_intro.fizzbuzz;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FizzBuzzShould {
@@ -25,18 +27,18 @@ public class FizzBuzzShould {
     }
 
     @Test
-    void return_fizzbuzz_if_number_is_15(){
+    void return_fizzbuzz_if_number_is_fifteen(){
         assertEquals("FizzBuzz", fizzbuzz.getString(15));
     }
 
     @Test
-    void return_number_if_number_is_1(){
-        assertEquals("1", fizzbuzz.getString(1));
-    }
+    void return_number_if_number_is_not_multiple_of_three_or_five() {
+        int[] non_multiple = {0, 1, 2, 4, 6, 7, 8, 9, 11, 13, 14};
 
-    @Test
-    void return_number_if_number_is_2(){
-        assertEquals("2", fizzbuzz.getString(2));
+        for (int i = 0; i < non_multiple.length; i++) {
+            assertEquals(String.valueOf(non_multiple[i]), fizzbuzz.getString(non_multiple[i]));
+        }
+
     }
 
 }
