@@ -10,7 +10,7 @@ public class FizzBuzz {
             if (i % 3 == 0){
                 result = "Fizz";
             }
-            if (i == 5){
+            if (i == 5 || i == 10){
                 result = "Buzz";
             }
 
