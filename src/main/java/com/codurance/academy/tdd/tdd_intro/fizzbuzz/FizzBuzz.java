@@ -9,9 +9,8 @@ public class FizzBuzz {
         if (i == 5){
             result = "Buzz";
         }
-        if (i == 3 || i == 6){
+        if (i % 3 == 0){
             result = "Fizz";
-
         }
 
         return result;

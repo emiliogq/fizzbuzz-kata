@@ -37,7 +37,7 @@ public class FizzBuzzShould {
 
     @Test
     void return_number_if_number_is_not_multiple_of_three_or_five() {
-        int[] non_multiple = {0, 1, 2, 4, 7, 8, 9, 11, 13, 14};
+        int[] non_multiple = {1, 2, 4, 7, 8, 11, 13, 14};
 
         for (int i = 0; i < non_multiple.length; i++) {
             assertEquals(String.valueOf(non_multiple[i]), fizzbuzz.getString(non_multiple[i]));
